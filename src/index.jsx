@@ -8,7 +8,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import appMessages from './i18n';
-import OpenAssessmentListContainer from './OpenAssessmentListContainer';
+import InstructorDashboardContainer from './InstructorDashboardContainer';
 
 import './index.scss';
 import './assets/favicon.ico';
@@ -16,8 +16,7 @@ import './assets/favicon.ico';
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider>
-      <br />
-      <OpenAssessmentListContainer />
+      <InstructorDashboardContainer />
     </AppProvider>,
     document.getElementById('root'),
   );

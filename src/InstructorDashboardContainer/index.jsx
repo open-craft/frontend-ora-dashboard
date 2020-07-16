@@ -1,12 +1,14 @@
 import React from 'react';
 
 import PageLoading from '../PageLoading';
-import AggregatedDataTable from '../AggregatedDataTable';
+import InstructorDashboardView from '../InstructorDashboardView';
 
-export default function OpenAssessmentListContainer() {
+export default function InstructorDashboardContainer() {
   const [loading, setLoading] = React.useState(false);
 
-  setLoading(false);
+  if (loading) {
+    setLoading(false);
+  }
 
   if (loading) {
     return <PageLoading />;
@@ -46,6 +48,6 @@ export default function OpenAssessmentListContainer() {
   ];
 
   return (
-    <AggregatedDataTable assessmentData={data} />
+    <InstructorDashboardView assessmentData={data} />
   );
 }
