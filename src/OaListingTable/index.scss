@@ -1,0 +1,21 @@
+.ora-assessments-list-table {
+    thead {
+        th {
+            // Fixes work breaking in table
+            word-wrap: nowrap;
+
+            // Adjust default tabel styling
+            font-size: x-small;
+            text-transform: uppercase;
+            margin: 0;
+            border: none !important;
+
+            // Fixes column header label alignment
+            button {
+                text-align: left !important;
+                text-transform: uppercase;
+                font-size: x-small;
+            }
+        }
+    }
+}

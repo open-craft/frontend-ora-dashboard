@@ -1,0 +1,14 @@
+.ora-assessments-metrics-table {
+    thead {
+        th {
+            // Fixes work breaking in table
+            word-wrap: nowrap;
+
+            // Adjust default tabel styling
+            font-size: x-small;
+            text-transform: uppercase;
+            margin: 0;
+            border: none !important;
+        }
+    }
+}
